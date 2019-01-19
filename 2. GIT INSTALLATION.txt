@@ -1,0 +1,59 @@
+INSTALLING GIT ON RHEL/CENTOS7:-
+===============================
+
+1. install git
+   #yum install -y git
+
+
+2. create and navigat to directory
+   #mkdir git && cd git
+
+
+3. initialize git
+   #git init
+
+
+4. now configure git
+   #git config --global user.name "xyz"
+   #git config --global user.email "xyz@gmail.com"
+   #git config --global color.ui true   
+
+
+5. generate ssh keys and copy in scm
+   #ssh-keygen
+   #cd /root/.ssh/
+   #cat id_rsa.pub
+
+
+6. now add remote scm url
+   #git remote add origin githublink
+
+
+7. create a file and push it to scm
+   #touch f1 
+   #git add filename (or) git add . -------->where . represents current directory
+   #git commit -m "some message"
+   #git remote add origin githublink
+   #git push -u origin master
+
+
+8. updating git (if necessary)
+   #yum update -y git
+
+
+
+========================
+CREATING GITHUB ACCOUNT:-
+========================
+A)	 
+ 1. Signup using login name, password, email.					 	  
+ 2. Verify email-id		
+ 3. Choose public/private repository
+
+B) Creating a new repository in github:-
+ 1. Click on +dropdown box 									
+ 2. Select new repository			
+ 3. give repository name ex:-mygitrepo		
+ 4. Add description				
+ 5. Click on create repository 			
+ 6. Copy the HTTPS url ex:https://github.com/kvvmanikanth/mygitrepo.git
